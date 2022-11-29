@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Calculator.Models.Calculator">
+    <Position X="4.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAQAAAAhAAAAQAAAIAAIAgAAAACAAAAAAAAEAQAA=</HashCode>
+      <FileName>Models\Calculator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="EnteredOptions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Calculator.Models.OptionButton">
+    <Position X="0.75" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OptionButton.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Option" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Calculator.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAICAAAAAAAAAgBAAAAAAQAQAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Calculator" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.4" Collapsed="true" />
+  </Class>
+  <Enum Name="Calculator.Models.Option">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Option.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

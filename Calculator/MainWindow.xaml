@@ -1,0 +1,78 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="516" Width="402"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Border BorderBrush="Gray" CornerRadius="35"  BorderThickness="2">
+            <Grid>
+                <Label x:Name="lbl_Calculation" Content="1+2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+            </Grid>
+        </Border>
+        <!--Entry Buttons-->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="btn_CA" Content="CA" Grid.Column="0" Grid.Row="0" Margin="5" Height="auto" Click="btn_CA_Click" />
+            <Button x:Name="btn_CE" Content="CE" Grid.Column="1" Grid.Row="0" Margin="5" Height="auto" Click="btn_CE_Click"/>
+            <Button x:Name="btn_PlusMinus" Content="+/-" Grid.Column="2" Grid.Row="0" Margin="5" Height="auto" Click="btn_operand_Click"/>
+            <Button x:Name="btn_potent" Content="^" Grid.Column="3" Grid.Row="0" Margin="5" Height="auto" Click="btn_operand_Click"/>
+            
+            
+            <Button x:Name="btn_7" Content="7" Grid.Column="0" Grid.Row="1" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_8" Content="8" Grid.Column="1" Grid.Row="1" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_9" Content="9" Grid.Column="2" Grid.Row="1" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_devide" Content="/" Grid.Column="3" Grid.Row="1" Margin="5" Height="auto" Click="btn_operand_Click"/>
+
+
+            <Button x:Name="btn_4" Content="4" Grid.Column="0" Grid.Row="2" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_5" Content="5" Grid.Column="1" Grid.Row="2" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_6" Content="6" Grid.Column="2" Grid.Row="2" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_multitpy" Content="*" Grid.Column="3" Grid.Row="2" Margin="5" Height="auto" Click="btn_operand_Click"/>
+
+
+            <Button x:Name="btn_1" Content="1" Grid.Column="0" Grid.Row="3" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_2" Content="2" Grid.Column="1" Grid.Row="3" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_3" Content="3" Grid.Column="2" Grid.Row="3" Margin="5" Height="auto" Click="btn_number_Click"/>
+            <Button x:Name="btn_plus" Content="+" Grid.Column="3" Grid.Row="3" Margin="5" Height="auto" Click="btn_operand_Click"/>
+
+
+            <Button x:Name="btn_0" Content="0" Grid.Column="0" Grid.Row="4" Margin="5" Height="auto" Click="btn_number_Click"/>
+
+            <Button x:Name="btn_minus" Content="-" Grid.Column="2" Grid.Row="4" Margin="5" Height="auto" Click="btn_operand_Click"/>
+            <Button x:Name="btn_euqals" Content="=" Grid.Column="3" Grid.Row="4" Margin="5" Height="auto" Click="btn_euqals_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>
